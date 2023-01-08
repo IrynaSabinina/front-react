@@ -1,0 +1,13 @@
+.item {
+  display: flex;
+  align-items: center;
+}
+.itemText {
+  margin-left: 15px;
+}
+
+.item:hover {
+  background-color: rgba(171, 87, 254, 0.544);
+  color: green;
+  fill: green;
+}

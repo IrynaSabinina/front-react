@@ -1,1 +1,3 @@
-export const usersInitialState = [];
+export const usersInitialState = {
+  users: [],
+};

@@ -1,14 +1,17 @@
 import axios from "axios";
-export const API = axios.create({
-  baseURL: "http://localhost:4200/",
-});
 
-// export const tokenAuth = {
-//   set(token) {
-//     API.defaults.headers.common.Authorization = `Bearer ${token}`;
-//   },
+const BASE_URL = "http://localhost:8009";
+const API = axios.create(
+  { baseURL: BASE_URL },
+  {
+    mode: "no-cors",
+    credentials: "include",
+    method: "GET",
+  }
+);
 
-//   unset() {
-//     API.defaults.headers.common.Authorization = ``;
-//   },
-// };
+export const fetchUsers = () => {
+  const data = API.get("/users");
+ 
+  return data;
+};

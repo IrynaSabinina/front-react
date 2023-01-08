@@ -8,7 +8,7 @@ const usersSlice = createSlice({
 
   extraReducers: {
     [getUsers.fulfilled]: (state, { payload }) => {
-      state = payload;
+      state.users = payload;
     },
   },
 });

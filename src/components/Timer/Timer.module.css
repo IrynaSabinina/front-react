@@ -1,0 +1,8 @@
+.timer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  width: 30%;
+  border: 2px solid rebeccapurple;
+  color: green;
+}

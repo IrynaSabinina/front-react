@@ -23,7 +23,7 @@ export const UserItem = ({ id, name, nick, phone, mail, site, company }) => {
         <span className={styles.itemText}>{name}</span>
       </button>
       {open ? (
-        <li key={id}>
+        <li className={styles.card} key={id}>
           <p>userName : {nick}</p>
           <p>tel : {phone}</p>
           <p>email : {mail}</p>

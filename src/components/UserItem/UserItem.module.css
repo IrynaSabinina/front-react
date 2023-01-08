@@ -1,13 +1,28 @@
 .item {
   display: flex;
   align-items: center;
+  color: rebeccapurple;
+  fill: rebeccapurple;
 }
 .itemText {
   margin-left: 15px;
 }
 
-.item:hover {
+.item:hover,
+.item:active,
+.item:focus {
   background-color: rgba(171, 87, 254, 0.544);
   color: green;
   fill: green;
+}
+.card {
+  margin: 15px;
+  padding: 10px;
+  border: 2px solid rgba(171, 87, 254, 0.544);
+  border-radius: 4%;
+  color: rebeccapurple;
+  box-shadow: 10px 10px 5px rebeccapurple;
+}
+.card:hover {
+  transform: scale(1.025);
 }
